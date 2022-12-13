@@ -1,0 +1,16 @@
+﻿@page "/"
+@inject NavigationManager NavManager
+<PageTitle>Index</PageTitle>
+
+@if (Time is not null)
+{
+	<h2>@Time</h2>
+}
+@if (Token is not null)
+{
+	<h2>@Token</h2>
+}
+@if (SearchTerm is not null)
+{
+	<h2>@SearchTerm</h2>
+}
